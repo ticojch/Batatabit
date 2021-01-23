@@ -409,16 +409,29 @@ main{
 
 .pricePlans__card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
     min-width: 224px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 10px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     color: #000000;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.cardRecommended{
+    order: 2;
+}
+
+.cardBasic{
+    order: 1;
+}
+
+.cardPremium{
+    order: 3;
 }
 
 .typePlan{
@@ -478,6 +491,10 @@ main{
     top: 15px;
 }
 
+.cardPremium span{
+    left: calc(50% - 60px);
+}
+
 .planCard__saving{
     font-size: 1.2rem;
     line-height: 1.4rem;
@@ -522,4 +539,12 @@ main{
 
 .cardPremium .planCard__ca{
     border: 2px solid #383838;
+}
+
+.pricePlans__slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
