@@ -421,7 +421,7 @@ main{
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.recommended{
+.typePlan{
     position: absolute;
     width: 120px;
     height: 31px;
@@ -431,9 +431,22 @@ main{
     line-height: 1.4rem;
     top: calc(0% - 15.5px);
     left: calc(50% - 60px);
-    background-color: var(--bitcoin-orange);
-    color: var(--just-white);
     border-radius: 8px;
+}
+
+.cardRecommended .typePlan{
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white); 
+}
+
+.cardBasic .typePlan{
+    background-color: var(--secondary-blue);
+    color: var(--just-white); 
+}
+
+.cardPremium .typePlan{
+    background-color: #383838;
+    color: var(--just-white); 
 }
 
 .infoPlan-container{
@@ -483,7 +496,7 @@ main{
     font-weight: 700;
     font-family: "DM Sans", sans-serif;
     background-color: #FAF8F7;
-    border: 2px solid var(--bitcoin-orange);
+    
     border-radius: 4px;
     color: var(--warm-black);
 }
@@ -497,4 +510,16 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
+}
+
+.cardRecommended .planCard__ca{
+    border: 2px solid var(--bitcoin-orange);
+}
+
+.cardBasic .planCard__ca{
+    border: 2px solid var(--secondary-blue);
+}
+
+.cardPremium .planCard__ca{
+    border: 2px solid #383838;
 }
