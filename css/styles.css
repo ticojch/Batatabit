@@ -352,7 +352,6 @@ main{
     font-weight: 700;
     line-height: 1.8rem;
     color: var(--just-white);
-    
 }
 
 .benefit-card p{
@@ -367,7 +366,7 @@ main{
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url('../assets/img/bitcoinbaby2x.jpg');
+    background-image: url('../assets/img/bitcoinbaby.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -521,6 +520,19 @@ main{
     
     border-radius: 4px;
     color: var(--warm-black);
+}
+
+.cardRecommended .planCard__ca:hover{
+    background-color: var(--soft-orange);
+}
+
+.cardBasic .planCard__ca:hover{
+    background-color: var(--soft-blue);
+}
+
+.cardPremium .planCard__ca:hover{
+    background-color: #BABABA;
+    color: var(--just-white);
 }
 
 .button__arrowRight{
